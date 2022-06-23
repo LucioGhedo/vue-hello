@@ -18,7 +18,10 @@
             <h1>{{ objectName.helloVue }}</h1>
             <div>Creato da: {{ objectName.name }}</div>
             <div>Età: {{ objectName.age }}</div>
-            <img :src="bonusObject.img" :alt="bonusObject.imgName">
+            <div class="flex">
+                <img :src="bonusObject.img" :alt="bonusObject.imgName">
+                <button @click="changeMonkeyPic()">CHANGE PIC</button>
+            </div>
         </div>
     </div>
 
